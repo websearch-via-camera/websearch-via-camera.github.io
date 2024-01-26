@@ -1,6 +1,6 @@
 const { useState, useEffect } = React;
 
-const data = [{ id: 0, label: "Istanbul, TR (AHL)" }, { id: 1, label: "Paris, FR (CDG)" }];
+const data = [{ id: 0, label: "English" }, { id: 1, label: "Spanish" } , { id: 2, label: "Indonesian" } , { id: 3, label: "Greek" } ];
 
 const Dropdown = () => {
   const [isOpen, setOpen] = useState(false);
