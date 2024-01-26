@@ -16,7 +16,7 @@ const Dropdown = () => {
   return /*#__PURE__*/(
     React.createElement("div", { className: "dropdown" }, /*#__PURE__*/
     React.createElement("div", { className: "dropdown-header", onClick: toggleDropdown },
-    selectedItem ? items.find(item => item.id == selectedItem).label : "Select your destination", /*#__PURE__*/
+    selectedItem ? items.find(item => item.id == selectedItem).label : "Select your language", /*#__PURE__*/
     React.createElement("i", { className: `fa fa-chevron-right icon ${isOpen && "open"}` })), /*#__PURE__*/
 
     React.createElement("div", { className: `dropdown-body ${isOpen && 'open'}` },
