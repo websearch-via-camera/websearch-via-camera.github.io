@@ -3,7 +3,7 @@ const { useState, useEffect, useCallback } = React;
 const data = [{ id: 0, label: "English" }, { id: 1, label: "Spanish" }, { id: 2, label: "Indonesian" }, { id: 3, label: "Greek" }];
 
 const results = [
-{ href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments' }];
+{ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' }];
 
 // const results = [
 //     { href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments'}, { href: '#', title: 'The Psalms'},{ href: '#', title: 'The Quran'},
