@@ -35,9 +35,9 @@ const Dropdown = () => {
 
   return /*#__PURE__*/(
     React.createElement("div", null, /*#__PURE__*/
-    React.createElement("h1", null, "Search the Web"), /*#__PURE__*/
-    React.createElement("h3", null, "via your phone camera"), /*#__PURE__*/
-    React.createElement("h5", null, "Powered by GPT Vision"), /*#__PURE__*/
+    React.createElement("h1", null, "Search the Web ", /*#__PURE__*/React.createElement("br", null), "via your phone camera"), /*#__PURE__*/
+
+    React.createElement("h3", null, "Powered by GPT Vision"), /*#__PURE__*/
     React.createElement("div", { className: "dropdown" }, /*#__PURE__*/
     React.createElement("div", { className: "dropdown-header", onClick: toggleDropdown },
     selectedItem ? items.find(item => item.id == selectedItem).label : "Select your language", /*#__PURE__*/
