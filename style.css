@@ -9,6 +9,7 @@ body {
   color: #4B4D54;
   overflow: hidden;
   font-family: 'Source Sans Pro', sans-serif;
+  line-height: 3rem;
 }
 
 .dropdown {
