@@ -35,9 +35,9 @@ const Dropdown = () => {
 
   return /*#__PURE__*/(
     React.createElement("div", null, /*#__PURE__*/
-    React.createElement("h1", null, "Search the Web ", /*#__PURE__*/React.createElement("br", null), "via your phone camera"), /*#__PURE__*/
+    React.createElement("h1", null, "Search the Web ", /*#__PURE__*/React.createElement("br", null), "via your camera"), /*#__PURE__*/
 
-    React.createElement("h3", null, "Powered by GPT Vision"), /*#__PURE__*/
+    React.createElement("h4", null, "Powered by GPT Vision"), /*#__PURE__*/
     React.createElement("div", { className: "dropdown" }, /*#__PURE__*/
     React.createElement("div", { className: "dropdown-header", onClick: toggleDropdown },
     selectedItem ? items.find(item => item.id == selectedItem).label : "Select your language", /*#__PURE__*/
@@ -61,7 +61,7 @@ const Dropdown = () => {
     React.createElement("div", {
       className: "start" }, /*#__PURE__*/
 
-    React.createElement("div", { style: { padding: '33px', paddingTop: '36px', fontWeight: '1000', color: 'black', underline: 'None' } }, " Start")))));
+    React.createElement("div", { style: { padding: '31px', paddingTop: '36px', fontWeight: '1000', color: 'black', underline: 'None' } }, " Start")))));
 
 
 
