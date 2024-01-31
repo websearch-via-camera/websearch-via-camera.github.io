@@ -3,7 +3,7 @@ const { useState, useEffect, useCallback } = React;
 const data = [{ id: 0, label: "English" }, { id: 1, label: "Spanish" }, { id: 2, label: "Indonesian" }, { id: 3, label: "Greek" }];
 
 const results = [
-{ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' }];
+{ href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments' }];
 
 // const results = [
 //     { href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments'}, { href: '#', title: 'The Psalms'},{ href: '#', title: 'The Quran'},
@@ -61,8 +61,13 @@ const Dropdown = () => {
     React.createElement("div", {
       className: "start" }, /*#__PURE__*/
 
-    React.createElement("div", { style: { padding: '25px 31px 31px', fontWeight: '1000', color: 'black', underline: 'None' } }, " Start")))));
+    React.createElement("div", { style: { padding: '25px 31px 31px', fontWeight: '1000', color: 'black', underline: 'None' } }, " Start"))), /*#__PURE__*/
 
+
+
+
+    React.createElement("div", { style: { padding: '110px' } }, /*#__PURE__*/
+    React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "Privacy Policy"))));
 
 
 
