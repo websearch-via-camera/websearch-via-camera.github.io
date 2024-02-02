@@ -123,10 +123,9 @@ export default {
   <html lang="${lang}" >
   <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=0.9">
-     <script src='https://websearch-via-camera.com/tailwindcss.3.4.1'></script>
-     <script src='https://websearch-via-camera.com/tailwindcss.3.4.1_plugins=forms@0.5.7,typography@0.5.10,aspect-ratio@0.4.2'></script> 
-     
+     <meta name="viewport" content="width=device-width, initial-scale=0.8">
+     <link href="https://websearch-via-camera.com/output.css" rel="stylesheet">
+
      <script type="text/javascript">
      const jsn =  JSON.stringify( ${  JSON.stringify(json.webPages)} );
      async function getText(url, query) {
