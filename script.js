@@ -1,5 +1,6 @@
 const { useState, useEffect, useCallback } = React;
 
+
 const data = [{ id: 0, label: "English" }, { id: 1, label: "Spanish" }, { id: 2, label: "Indonesian" }, { id: 3, label: "Greek" }];
 
 const results = [
@@ -30,6 +31,10 @@ const Dropdown = () => {
 
   const handleItemClick = id => {
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
+    if (id == 1) {
+      window.location.href = '/es';
+    }
+
     toggleDropdown();
   };
 
@@ -61,7 +66,7 @@ const Dropdown = () => {
     React.createElement("div", {
       className: "start" }, /*#__PURE__*/
 
-    React.createElement("div", { style: { padding: '25px 31px 31px', fontWeight: '1100', color: 'white', underline: 'None' } }, " Start"))), /*#__PURE__*/
+    React.createElement("div", { style: { padding: '25px 31px 31px', fontWeight: '1200', color: 'white', underline: 'None' } }, " Start"))), /*#__PURE__*/
 
 
 
