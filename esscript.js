@@ -1,7 +1,7 @@
 const { useState, useEffect, useCallback } = React;
 
 
-const data = [{ id: 0, label: "Inglés" }, { id: 1, label: "español" }, { id: 2, label: "Indonesio" }, { id: 3, label: "Griego" }];
+const data = [{ id: 0, label: "Inglés English" }, { id: 1, label: "Español" }, { id: 2, label: "Indonesio Bahasa Indonesia" }, { id: 3, label: "Griego" }];
 
 const results = [
 { href: 'https://result.websearch-via-camera.com/Los%20diez%20Mandamientos', title: 'Los diez Mandamientos' }];
