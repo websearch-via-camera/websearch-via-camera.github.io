@@ -1,7 +1,7 @@
 const { useState, useEffect, useCallback } = React;
 
 
-const data = [{ id: 0, label: "English" }, { id: 1, label: "Spanish" }, { id: 2, label: "Indonesian" }, { id: 3, label: "Greek" }];
+const data = [{ id: 0, label: "English" }, { id: 1, label: "Spanish Español" }, { id: 2, label: "Indonesian Bahasa Indonesia" }, { id: 3, label: "Greek Ελληνικά" }];
 
 const results = [
 { href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' }];
