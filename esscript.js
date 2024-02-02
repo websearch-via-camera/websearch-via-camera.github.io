@@ -33,8 +33,11 @@ const Dropdown = () => {
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
     if (id == 0) {
       window.location.href = 'https://websearch-via-camera.com';
+    } elif (id == 2) {
+      window.location.href = 'https://websearch-via-camera.com/id';
+    } elif (id == 3) {
+      window.location.href = 'https://websearch-via-camera.com/el';
     }
-
     toggleDropdown();
   };
 
