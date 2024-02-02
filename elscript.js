@@ -1,7 +1,7 @@
 const { useState, useEffect, useCallback } = React;
 
 
-const data = [{ id: 0, label: "Αγγλικά" }, { id: 1, label: "Ισπανικά" }, { id: 2, label: "Ινδονησιακά" }, { id: 3, label: "Ελληνικά" }];
+const data = [{ id: 0, label: "Αγγλικά English" }, { id: 1, label: "Ισπανικά Español" }, { id: 2, label: "Ινδονησιακά Bahasa Indonesia" }, { id: 3, label: "Ελληνικά" }];
 
 const results = [
 { href: 'https://result.websearch-via-camera.com/%CE%9F%CE%B9%20%CE%B4%CE%AD%CE%BA%CE%B1%20%CE%B5%CE%BD%CF%84%CE%BF%CE%BB%CE%AD%CF%82', title: 'Οι δέκα εντολές' }];
