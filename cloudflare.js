@@ -123,7 +123,10 @@ export default {
   <html lang="${lang}" >
   <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=0.9">
+     <script src='https://websearch-via-camera.com/tailwindcss.3.4.1'></script>
+     <script src='https://websearch-via-camera.com/tailwindcss.3.4.1_plugins=forms@0.5.7,typography@0.5.10,aspect-ratio@0.4.2'></script> 
+     
      <script type="text/javascript">
      const jsn =  JSON.stringify( ${  JSON.stringify(json.webPages)} );
      async function getText(url, query) {
@@ -507,8 +510,6 @@ border-color: #1DA851;
   
   </div>
   <!-- partial -->
-    <script src='https://websearch-via-camera.com/tailwindcss.3.4.1'></script>
-  <script src='https://websearch-via-camera.com/tailwindcss.3.4.1_plugins=forms@0.5.7,typography@0.5.10,aspect-ratio@0.4.2'></script> 
   
   </body>
   </html>
