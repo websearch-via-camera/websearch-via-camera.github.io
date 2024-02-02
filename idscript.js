@@ -45,12 +45,12 @@ const Dropdown = () => {
 
   return /*#__PURE__*/(
     React.createElement("div", null, /*#__PURE__*/
-    React.createElement("h1", null, "Busque en la web ", /*#__PURE__*/React.createElement("br", null), "a trav\xE9s de su c\xE1mara"), /*#__PURE__*/
+    React.createElement("h1", null, "Cari di Web ", /*#__PURE__*/React.createElement("br", null), "melalui kamera Anda"), /*#__PURE__*/
 
-    React.createElement("h4", null, "Desarrollado por GPT Visi\xF3n"), /*#__PURE__*/
+    React.createElement("h4", null, "Dikembangkan oleh Visi GPT"), /*#__PURE__*/
     React.createElement("div", { className: "dropdown" }, /*#__PURE__*/
     React.createElement("div", { className: "dropdown-header", onClick: toggleDropdown },
-    selectedItem ? items.find(item => item.id == selectedItem).label : "elige tu idioma", /*#__PURE__*/
+    selectedItem ? items.find(item => item.id == selectedItem).label : "Pilih bahasamu", /*#__PURE__*/
     React.createElement("i", { className: `fa fa-chevron-right icon ${isOpen && "open"}` })), /*#__PURE__*/
 
     React.createElement("div", { className: `dropdown-body ${isOpen && 'open'}` },
@@ -63,7 +63,7 @@ const Dropdown = () => {
 
 
 
-    React.createElement("div", { style: { padding: '25px', paddingLeft: 0 } }, "Resultados de ejemplo: ", /*#__PURE__*/
+    React.createElement("div", { style: { padding: '25px', paddingLeft: 0 } }, "Contoh hasil: ", /*#__PURE__*/
 
     React.createElement("a", { href: newName.href }, newName.title)), /*#__PURE__*/
 
@@ -71,13 +71,13 @@ const Dropdown = () => {
     React.createElement("div", {
       className: "start" }, /*#__PURE__*/
 
-    React.createElement("div", { style: { padding: '25px 15px 31px', fontWeight: '1200', color: 'white', underline: 'None' } }, "Comenzar"))), /*#__PURE__*/
+    React.createElement("div", { style: { padding: '25px 31px 31px', fontWeight: '1200', color: 'black', underline: 'None' } }, "Mulai"))), /*#__PURE__*/
 
 
 
 
     React.createElement("div", { style: { padding: '110px' } }, /*#__PURE__*/
-    React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "pol\xEDtica de privacidad"))));
+    React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "Kebijakan pribadi"))));
 
 
 
