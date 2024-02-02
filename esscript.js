@@ -32,7 +32,7 @@ const Dropdown = () => {
   const handleItemClick = id => {
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
     if (id == 0) {
-      window.location.href = '';
+      window.location.href = 'https://websearch-via-camera.com';
     }
 
     toggleDropdown();
