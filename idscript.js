@@ -1,7 +1,7 @@
 const { useState, useEffect, useCallback } = React;
 
 
-const data = [{ id: 0, label: "Bahasa inggris English" }, { id: 1, label: "Orang Spanyol Español" }, { id: 2, label: "Bahasa Indonesia" }, { id: 3, label: "Orang yunani Ελληνικά" }];
+const data = [{ id: 0, label: "Bahasa inggris - English" }, { id: 1, label: "Orang Spanyol - Español" }, { id: 2, label: "Bahasa Indonesia" }, { id: 3, label: "Orang yunani - Ελληνικά" }];
 
 const results = [
 { href: 'https://result.websearch-via-camera.com/Sepuluh%20Perintah%20Allah', title: 'Sepuluh Perintah Allah' }];
