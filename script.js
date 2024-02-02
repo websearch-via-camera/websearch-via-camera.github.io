@@ -33,8 +33,11 @@ const Dropdown = () => {
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
     if (id == 1) {
       window.location.href = '/es';
+    }elif (id == 2) {
+      window.location.href = '/id';
+    }elif (id == 3) {
+      window.location.href = '/el';
     }
-
     toggleDropdown();
   };
 
