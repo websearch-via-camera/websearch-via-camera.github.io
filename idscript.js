@@ -71,7 +71,7 @@ const Dropdown = () => {
     React.createElement("div", {
       className: "start" }, /*#__PURE__*/
 
-    React.createElement("div", { style: { padding: '25px 31px 31px', fontWeight: '1200', color: 'black', underline: 'None' } }, "Mulai"))), /*#__PURE__*/
+    React.createElement("div", { style: { padding: '25px 31px 31px', fontWeight: '1200', color: 'white', underline: 'None' } }, "Mulai"))), /*#__PURE__*/
 
 
 
