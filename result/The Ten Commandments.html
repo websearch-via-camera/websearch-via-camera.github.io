@@ -12,7 +12,23 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="stylesheet" href="https://websearch-via-camera.com/style2.css">
-  
+    <script>
+(function(apiKey){
+    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+    v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+        pendo.initialize({
+            visitor: {
+                id:              ''
+            },
+            account: {
+                id:           'ten'
+            }
+        });
+})('77c31c1f-3cb3-460a-5fe5-7c75b1710e3c');
+</script>
 <script type="application/ld+json">
 [
 {
