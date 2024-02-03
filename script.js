@@ -17,17 +17,16 @@ const Dropdown = () => {
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
   const [newName, setnewName] = useState({ href: '#', title: ' ' });
-  const [ind, setInd] = useState(0);
-
+  let ind = 0;
   const shuffle = useCallback(() => {
     console.log(ind)
     if (ind + 1 >= results.length){
       console.log("reset");
-      setInd(0);
+      ind = 0
       setnewName(results[0]);
     } else {
-      setInd(ind+1);
       setnewName(results[ind+1]);
+      ind = ind + 1;
     }
     
     // const index = Math.floor(Math.random() * results.length);
