@@ -20,12 +20,15 @@ const Dropdown = () => {
   const [ind, setInd] = useState(0);
 
   const shuffle = useCallback(() => {
+    console.log(ind)
     if (ind + 1 >= results.length){
       setInd(0);
+      setnewName(results[0]);
     } else {
       setInd(ind+1)
+      setnewName(results[ind+1]);
     }
-    setnewName(results[ind]);
+    
     // const index = Math.floor(Math.random() * results.length);
     // setnewName(results[index]);
   }, []);
