@@ -4,7 +4,7 @@ const { useState, useEffect, useCallback } = React;
 const data = [{ id: 0, label: "Inglés - English" }, { id: 1, label: "Español" }, { id: 2, label: "Indonesio - Bahasa Indonesia" }, { id: 3, label: "Griego" }];
 
 const results = [
-{ href: 'https://result.websearch-via-camera.com/es/Los%20diez%20Mandamientos', title: 'Los diez Mandamientos' }];
+{ href: 'https://result.websearch-via-camera.com/es/Los%20diez%20Mandamientos', title: 'Los diez Mandamientos' }, { href: 'https://result.websearch-via-camera.com/es/el%20libro%20de%20los%20salmos', title: 'el libro de los salmos'}];
 
 // const results = [
 //     { href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments'}, { href: '#', title: 'The Psalms'},{ href: '#', title: 'The Quran'},
