@@ -19,22 +19,17 @@ const Dropdown = () => {
   const [newName, setnewName] = useState({ href: '#', title: ' ' });
   let ind = 0;
   const shuffle = useCallback(() => {
-    console.log(ind)
     if (ind + 1 >= results.length){
-      console.log("reset");
       ind = 0
       setnewName(results[0]);
     } else {
       setnewName(results[ind+1]);
       ind = ind + 1;
     }
-    
-    // const index = Math.floor(Math.random() * results.length);
-    // setnewName(results[index]);
   }, []);
 
   useEffect(() => {
-    const intervalID = setInterval(shuffle, 2000);
+    const intervalID = setInterval(shuffle, 3000);
     return () => clearInterval(intervalID);
   }, [shuffle]);
 
