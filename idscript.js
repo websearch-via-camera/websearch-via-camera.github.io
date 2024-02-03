@@ -4,10 +4,10 @@ const { useState, useEffect, useCallback } = React;
 const data = [{ id: 0, label: "Bahasa inggris - English" }, { id: 1, label: "Orang Spanyol - Español" }, { id: 2, label: "Bahasa Indonesia" }, { id: 3, label: "Orang yunani - Ελληνικά" }];
 
 const results = [
-{ href: 'https://result.websearch-via-camera.com/id/Sepuluh%20Perintah%20Allah', title: 'Sepuluh Perintah Allah' }, { href: 'https://result.websearch-via-camera.com/id/kitab%20mazmur', title: 'kitab mazmur'}];
+{ href: 'https://result.websearch-via-camera.com/id/Sepuluh%20Perintah%20Allah', title: 'Sepuluh Perintah Allah' }, { href: 'https://result.websearch-via-camera.com/id/kitab%20mazmur', title: 'kitab mazmur'},{ href: 'https://result.websearch-via-camera.com/id/Al-Qur'an', title: 'Al-Qur'an'}];
 
 // const results = [
-//     { href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments'}, { href: 'https://result.websearch-via-camera.com/es/el%20libro%20de%20los%20salmos', title: 'el libro de los salmos'},{ href: '#', title: 'The Quran'},
+//     { href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments'}, { href: 'https://result.websearch-via-camera.com/es/el%20libro%20de%20los%20salmos', title: 'el libro de los salmos'},{ href: 'https://result.websearch-via-camera.com/id/Al-Qur'an', title: 'Al-Qur'an'},
 // ]
 
 const Dropdown = () => {
@@ -15,14 +15,19 @@ const Dropdown = () => {
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
   const [newName, setnewName] = useState({ href: '#', title: ' ' });
-
+  let ind = 0;
   const shuffle = useCallback(() => {
-    const index = Math.floor(Math.random() * results.length);
-    setnewName(results[index]);
+    if (ind + 1 >= results.length){
+      ind = 0
+      setnewName(results[0]);
+    } else {
+      setnewName(results[ind+1]);
+      ind = ind + 1;
+    }
   }, []);
 
   useEffect(() => {
-    const intervalID = setInterval(shuffle, 2000);
+    const intervalID = setInterval(shuffle, 3000);
     return () => clearInterval(intervalID);
   }, [shuffle]);
 
