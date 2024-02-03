@@ -30,7 +30,7 @@ export default {
       console.log(path)
       console.log(lang)
       console.log(query)
-      let resultFor = "Result for"
+      let resultFor = "Results for"
       let slow = "Slow, please wait."
       let slowText = "GPT is doing work. This takes upto two minutes. The result will appear below!"
       let GPTKnowledge = "GPT knowledge"
@@ -42,7 +42,7 @@ export default {
           slowText = "GPT está trabajando. Esto lleva hasta dos minutos. ¡El resultado aparecerá a continuación!"
           GPTKnowledge = "Conocimiento GPT"
           SummarizeBtn = "Resumir resultados"
-          resultFor = "Resultado para"
+          resultFor = "resultados para"
           powered = "Desarrollado por GPT."
           apiurlsummary = 'https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-2b706faa-8009-4af8-9ba2-0d52f5a1bed1/default/doEsSummary'
       }
@@ -51,7 +51,7 @@ export default {
           slowText = "Το GPT κάνει δουλειά. Αυτό διαρκεί έως και δύο λεπτά. Το αποτέλεσμα θα εμφανιστεί παρακάτω!"
           GPTKnowledge = "Γνώση GPT"
           SummarizeBtn = "Συνοψίστε τα αποτελέσματα"
-          resultFor = "Αποτέλεσμα για"
+          resultFor = "Αποτελέσματα για"
           powered = "Με την υποστήριξη του GPT."
           apiurlsummary = 'https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-2b706faa-8009-4af8-9ba2-0d52f5a1bed1/default/doElSummary'
       }
