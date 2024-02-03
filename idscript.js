@@ -17,7 +17,7 @@ const Dropdown = () => {
   const [isOpen, setOpen] = useState(false);
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
-  const [newName, setnewName] = useState({ href: '#', title: ' ' });
+  const [newName, setnewName] = useState(results[0]);
   let ind = 0;
   const shuffle = useCallback(() => {
     if (ind + 1 >= results.length){
