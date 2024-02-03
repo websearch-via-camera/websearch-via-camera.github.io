@@ -4,7 +4,10 @@ const { useState, useEffect, useCallback } = React;
 const data = [{ id: 0, label: "Αγγλικά - English" }, { id: 1, label: "Ισπανικά - Español" }, { id: 2, label: "Ινδονησιακά - Bahasa Indonesia" }, { id: 3, label: "Ελληνικά" }];
 
 const results = [
-{ href: 'https://result.websearch-via-camera.com/el/%CE%9F%CE%B9%20%CE%B4%CE%AD%CE%BA%CE%B1%20%CE%B5%CE%BD%CF%84%CE%BF%CE%BB%CE%AD%CF%82', title: 'Οι δέκα εντολές' }, {href: 'https://result.websearch-via-camera.com/el/%CF%84%CE%BF%20%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%BF%20%CF%84%CF%89%CE%BD%20%CF%88%CE%B1%CE%BB%CE%BC%CF%8E%CE%BD', title: 'το βιβλίο των ψαλμών'}];
+{ href: 'https://result.websearch-via-camera.com/el/%CE%9F%CE%B9%20%CE%B4%CE%AD%CE%BA%CE%B1%20%CE%B5%CE%BD%CF%84%CE%BF%CE%BB%CE%AD%CF%82', title: 'Οι δέκα εντολές' },
+{ href: 'https://result.websearch-via-camera.com/el/%CF%84%CE%BF%20%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%BF%20%CF%84%CF%89%CE%BD%20%CF%88%CE%B1%CE%BB%CE%BC%CF%8E%CE%BD', title: 'το βιβλίο των ψαλμών'},
+{ href: 'https://result.websearch-via-camera.com/el/%CF%84%CE%BF%20%CE%BA%CE%BF%CF%81%CE%AC%CE%BD%CE%B9', title: 'το κοράνι'}];
+
 
 // const results = [
 //     { href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments'}, { href: '#', title: 'The Psalms'},{ href: '#', title: 'The Quran'},
