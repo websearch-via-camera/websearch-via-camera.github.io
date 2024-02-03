@@ -15,14 +15,19 @@ const Dropdown = () => {
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
   const [newName, setnewName] = useState({ href: '#', title: ' ' });
-
+  let ind = 0;
   const shuffle = useCallback(() => {
-    const index = Math.floor(Math.random() * results.length);
-    setnewName(results[index]);
+    if (ind + 1 >= results.length){
+      ind = 0
+      setnewName(results[0]);
+    } else {
+      setnewName(results[ind+1]);
+      ind = ind + 1;
+    }
   }, []);
 
   useEffect(() => {
-    const intervalID = setInterval(shuffle, 2000);
+    const intervalID = setInterval(shuffle, 3000);
     return () => clearInterval(intervalID);
   }, [shuffle]);
 
