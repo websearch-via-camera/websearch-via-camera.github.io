@@ -16,7 +16,7 @@ const Dropdown = () => {
   const [isOpen, setOpen] = useState(false);
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
-  const [newName, setnewName] = useState({ href: '#', title: ' ' });
+  const [newName, setnewName] = useState({ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' });
   let ind = 0;
   const shuffle = useCallback(() => {
     if (ind + 1 >= results.length){
