@@ -27,42 +27,65 @@
 
 
 <script type="application/ld+json">
-    [
     {
-      "@context": "https://schema.org/", 
-      "@type": "BreadcrumbList", 
-      "itemListElement": [{
-        "@type": "ListItem", 
-        "position": 1, 
-        "name": "Search",
-        "item": "https://websearch-via-camera.com"  
-      },{
-        "@type": "ListItem", 
-        "position": 2, 
-        "name": "Result",
-        "item": "https://result.websearch-via-camera.com"  
-      },{
-        "@type": "ListItem", 
-        "position": 3, 
-        "name": "GPT Vision",
-        "item": ""  
-      }]
-    }
-    ,{
-      "@context": "https://schema.org/", 
-      "@type": "BreadcrumbList", 
-      "itemListElement": [{
-        "@type": "ListItem", 
-        "position": 1, 
-        "name": "Search",
-        "item": "https://websearch-via-camera.com"  
-      },{
-        "@type": "ListItem", 
-        "position": 2, 
-        "name": "GPT Vision",
-        "item": ""  
-      }]
-    }]
+   "@context":"http://schema.org",
+   "@graph":[
+      {
+         "@type":"Article",
+         "description":"Discover GPT-4 with Vision, a powerful multimodal model developed by OpenAI that can understand both text and images.",
+         "headline":"GPT Vision: How to Use OpenAI’s Multimodal Model to Analyze Images",
+         "image":{
+            "@type":"ImageObject",
+            "url":"https://zondervanacademic.nyc3.cdn.digitaloceanspaces.com/production/general/_1200x630_crop_center-center_82_none/nogodbutone_blog2.jpg?mtime=1599150446"
+         },
+         "inLanguage":"en-us",
+         "mainEntityOfPage":"https://websearch-via-camera.com/result/GPT%20Vision",
+         "name":"GPT Vision: How to Use OpenAI’s Multimodal Model to Analyze Images",
+         "publisher":{
+            "@id":"https://websearch-via-camera.com#creator"
+         },
+         "url":"https://websearch-via-camera.com/result/GPT%20Vision"
+      },
+      {
+         "@id":"https://websearch-via-camera.com#creator",
+         "@type":"WebSite",
+         "image":{
+            "@type":"ImageObject",
+            "height":"",
+            "url":"https://websearch-via-camera.com/logo.png",
+            "width":""
+         },
+         "inLanguage":"en-us",
+         "name":"Websearch via camera",
+         "url":"https://websearch-via-camera.com"
+      },
+      {
+         "@type":"BreadcrumbList",
+         "description":"Breadcrumbs list",
+         "itemListElement":[
+            {
+               "@type":"ListItem",
+               "item":"https://websearch-via-camera.com",
+               "name":"Search",
+               "position":1
+            },
+            {
+               "@type":"ListItem",
+               "item":"https://result.websearch-via-camera.com",
+               "name":"Result",
+               "position":2
+            },
+            {
+               "@type":"ListItem",
+               "item":"https://websearch-via-camera.com/result/GPT%20Vision",
+               "name":"GPT Vision",
+               "position":3
+            }
+         ],
+         "name":"Breadcrumbs"
+      }
+   ]
+}
 </script>
 
 </head>
