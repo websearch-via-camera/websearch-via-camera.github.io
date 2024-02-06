@@ -58,8 +58,10 @@ const Dropdown = () => {
     // e.preventDefault()
     let id = e.target.id;
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
-
+    console.log("handleClick");
+    if (id == 0) {
     document.cookie = 'lang=en;';
+    }
     if (id == 1) {
       window.location.href = '/es';
       document.cookie = 'lang=es;';
