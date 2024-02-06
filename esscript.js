@@ -35,7 +35,7 @@ const Dropdown = () => {
       window.location.href = '/el';
       setSelectedItem(3);
     }
-                           
+    document.cookie = 'lang=noselected;';
   }
   const [newName, setnewName] = useState(results[0]);
   let ind = 0;
