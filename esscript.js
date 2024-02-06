@@ -14,6 +14,28 @@ const Dropdown = () => {
   const [isOpen, setOpen] = useState(false);
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
+  let x = document.cookie;
+  const parts = x.split(`; lang=`);
+  if (parts.length === 2) {
+    cLang = parts.pop().split(';').shift();
+    if (cLang == 'en') {
+      window.location.href = '/en';
+      setSelectedItem(0);
+    }
+    if (cLang == 'es') {
+      window.location.href = '/es';
+      setSelectedItem(1);
+    }
+    if (cLang == 'id') {
+      window.location.href = '/id';
+      setSelectedItem(2);
+    }
+    if (cLang == 'el') {
+      window.location.href = '/el';
+      setSelectedItem(3);
+    }
+                           
+  }
   const [newName, setnewName] = useState(results[0]);
   let ind = 0;
   const shuffle = useCallback(() => {
@@ -36,14 +58,18 @@ const Dropdown = () => {
 
   const handleItemClick = id => {
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
-    if (id == 0) {
-      window.location.href = 'https://websearch-via-camera.com';
-    } 
+    document.cookie = 'lang=en;';
+    if (id == 1) {
+      window.location.href = '/es';
+      document.cookie = 'lang=es;';
+    }
     if (id == 2) {
-      window.location.href = 'https://websearch-via-camera.com/id';
-    } 
+      window.location.href = '/id';
+      document.cookie = 'lang=id;';
+    }
     if (id == 3) {
-      window.location.href = 'https://websearch-via-camera.com/el';
+      window.location.href = '/el';
+      document.cookie = 'lang=el;';
     }
     toggleDropdown();
   };
