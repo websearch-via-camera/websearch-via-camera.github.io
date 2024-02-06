@@ -19,7 +19,7 @@ const Dropdown = () => {
   if (parts.length === 2) {
     cLang = parts.pop().split(';').shift();
     if (cLang == 'en') {
-      window.location.href = '';
+      window.location.href = 'https://websearch-via-camera.com';
       setSelectedItem(0);
     }
     if (cLang == 'id') {
@@ -54,9 +54,11 @@ const Dropdown = () => {
 
   const handleItemClick = id => {
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
+    if (id == 0){
     document.cookie = 'lang=en;';
+    window.location.href = 'https://websearch-via-camera.com';
+    }
     if (id == 1) {
-      window.location.href = '/es';
       document.cookie = 'lang=es;';
     }
     if (id == 2) {
