@@ -14,6 +14,7 @@ const Dropdown = () => {
   const [isOpen, setOpen] = useState(false);
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
+  useEffect(()=>{    
   let x = document.cookie;
   const parts = x.split(`; lang=`);
   if (parts.length === 2) {
@@ -35,8 +36,8 @@ const Dropdown = () => {
       window.location.href = '/el';
       setSelectedItem(3);
     }
-    document.cookie = 'lang=noselected;';
   }
+    }, [])
   const [newName, setnewName] = useState(results[0]);
   let ind = 0;
   const shuffle = useCallback(() => {
