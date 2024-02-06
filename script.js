@@ -3,13 +3,13 @@ const { useState, useEffect, useCallback } = React;
 
 const data = [{ id: 0, label: "English" }, { id: 1, label: "Spanish - Español" }, { id: 2, label: "Indonesian - Bahasa Indonesia" }, { id: 3, label: "Greek - Ελληνικά" }];
 
-const results = [
-{ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' }, 
-{ href: 'https://websearch-via-camera.com/result/The%20Book%20of%20Psalms', title: 'The Book of Psalms' },
-{ href: 'https://websearch-via-camera.com/result/The%20Quran', title: 'The Quran'}];
 
+const results = [
+{ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' },
+{ href: 'https://websearch-via-camera.com/result/The%20Book%20of%20Psalms', title: 'The Book of Psalms' },
+{ href: 'https://websearch-via-camera.com/result/The%20Quran', title: 'The Quran' }];
 // const results = [
-//     { href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments'}, { href: '#', title: 'The Psalms'},{ href: 'https://websearch-via-camera.com/result/The%20Quran', title: 'The Quran'},
+//     { href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments'}, { href: '#', title: 'The Psalms'},{ href: '#', title: 'The Quran'},
 // ]
 
 const Dropdown = () => {
@@ -19,11 +19,11 @@ const Dropdown = () => {
   const [newName, setnewName] = useState({ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' });
   let ind = 0;
   const shuffle = useCallback(() => {
-    if (ind + 1 >= results.length){
-      ind = 0
+    if (ind + 1 >= results.length) {
+      ind = 0;
       setnewName(results[0]);
     } else {
-      setnewName(results[ind+1]);
+      setnewName(results[ind + 1]);
       ind = ind + 1;
     }
   }, []);
