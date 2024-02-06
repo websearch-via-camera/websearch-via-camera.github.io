@@ -95,6 +95,7 @@ export default {
           const json = JSON.parse(results)
           for(var i = 0; i < json.webPages?.value.length; i++) {
               let name = json.webPages?.value[i]?.name;
+              let followUrl = json.webPages?.value[i]?.url;
               let displayUrl = json.webPages?.value[i]?.displayUrl;
               let snippet = json.webPages?.value[i]?.snippet;
               let template = `<div class="max-w-3xl w-full lg:m-4 lg:flex">
@@ -109,7 +110,7 @@ export default {
     <div class="flex items-center">
 
       <div class="text-sm">
-        <a href="${displayUrl}" class="text-sm leading-none underline text-blue-600 hover:text-blue-800 visited:text-purple-600">${displayUrl}</a>
+        <a href="${followUrl}" class="text-sm leading-none underline text-blue-600 hover:text-blue-800 visited:text-purple-600">${displayUrl}</a>
 
       </div>
     </div>
@@ -124,6 +125,7 @@ export default {
   <head>
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
      <link href="https://websearch-via-camera.com/output.css" rel="stylesheet">
 
 
