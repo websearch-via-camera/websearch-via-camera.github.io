@@ -16,6 +16,9 @@ const Dropdown = () => {
   const [isOpen, setOpen] = useState(false);
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
+  let x = document.cookie;
+  console.log(x);
+
   const [newName, setnewName] = useState({ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' });
   let ind = 0;
   const shuffle = useCallback(() => {
@@ -38,20 +41,20 @@ const Dropdown = () => {
   const handleItemClick = e => {
     // e.preventDefault()
     let id = e.target.id;
-    // console.log(e)
-    // Cookies.set('name', 'value')
-    document.cookie = 'lang=es;';
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
 
-
+    document.cookie = 'lang=en;';
     if (id == 1) {
       window.location.href = '/es';
+      document.cookie = 'lang=es;';
     }
     if (id == 2) {
       window.location.href = '/id';
+      document.cookie = 'lang=id;';
     }
     if (id == 3) {
       window.location.href = '/el';
+      document.cookie = 'lang=el;';
     }
     toggleDropdown();
   };
