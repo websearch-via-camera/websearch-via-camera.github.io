@@ -18,7 +18,21 @@ const Dropdown = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   let x = document.cookie;
   const parts = x.split(`; lang=`);
-  if (parts.length === 2) {console.log(parts.pop().split(';').shift());
+  if (parts.length === 2) {
+    cLang = parts.pop().split(';').shift();
+    if (cLang == 'en') {
+      window.location.href = '/en';
+    }
+    if (cLang == 'es') {
+      window.location.href = '/es';
+    }
+    if (cLang == 'id') {
+      window.location.href = '/id';
+    }
+    if (cLang == 'el') {
+      window.location.href = '/el';
+    }
+                           
   }
 
   const [newName, setnewName] = useState({ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' });
