@@ -40,7 +40,7 @@ const Dropdown = () => {
     let id = e.target.id;
     // console.log(e)
     // Cookies.set('name', 'value')
-
+    document.cookie = 'lang=es;';
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
 
 
@@ -97,4 +97,3 @@ const Dropdown = () => {
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Dropdown, null), document.getElementById('app'));
-document.cookie = 'lang=en;';
