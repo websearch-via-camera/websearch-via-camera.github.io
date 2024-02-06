@@ -23,7 +23,9 @@ const Dropdown = () => {
       setSelectedItem(0);
     }
     if (cLang == 'es') {
+      console.log("here");
       setSelectedItem(1);
+      console.log("here2");
     }
     if (cLang == 'id') {
       window.location.href = '/id';
