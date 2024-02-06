@@ -20,10 +20,6 @@ const Dropdown = () => {
   const parts = x.split(`; lang=`);
   if (parts.length === 2) {
     cLang = parts.pop().split(';').shift();
-    if (cLang == 'en') {
-      window.location.href = '/en';
-      setSelectedItem(0);
-    }
     if (cLang == 'es') {
       window.location.href = '/es';
       setSelectedItem(1);
