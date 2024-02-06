@@ -17,7 +17,9 @@ const Dropdown = () => {
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
   let x = document.cookie;
-  console.log(x.lang);
+  const parts = x.split(`; lang=`);
+  if (parts.length === 2) {console.log(parts.pop().split(';').shift());
+  }
 
   const [newName, setnewName] = useState({ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' });
   let ind = 0;
