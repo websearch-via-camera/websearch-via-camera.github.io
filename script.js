@@ -22,15 +22,19 @@ const Dropdown = () => {
     cLang = parts.pop().split(';').shift();
     if (cLang == 'en') {
       window.location.href = '/en';
+      setSelectedItem(0);
     }
     if (cLang == 'es') {
       window.location.href = '/es';
+      setSelectedItem(1);
     }
     if (cLang == 'id') {
       window.location.href = '/id';
+      setSelectedItem(2);
     }
     if (cLang == 'el') {
       window.location.href = '/el';
+      setSelectedItem(3);
     }
                            
   }
