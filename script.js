@@ -35,9 +35,15 @@ const Dropdown = () => {
 
 
   const toggleDropdown = () => setOpen(!isOpen);
+  const handleItemClick = e => {
+    // e.preventDefault()
+    let id = e.target.id;
+    // console.log(e)
+    // Cookies.set('name', 'value')
 
-  const handleItemClick = id => {
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
+
+
     if (id == 1) {
       window.location.href = '/es';
     }
@@ -62,7 +68,7 @@ const Dropdown = () => {
 
     React.createElement("div", { className: `dropdown-body ${isOpen && 'open'}` },
     items.map((item) => /*#__PURE__*/
-    React.createElement("div", { className: "dropdown-item", onClick: e => handleItemClick(e.target.id), id: item.id }, /*#__PURE__*/
+    React.createElement("div", { className: "dropdown-item", onClick: handleItemClick, id: item.id }, /*#__PURE__*/
     React.createElement("span", { className: `dropdown-item-dot ${item.id == selectedItem && 'selected'}` }, "\u2022 "),
     item.label)))), /*#__PURE__*/
 
@@ -91,3 +97,4 @@ const Dropdown = () => {
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Dropdown, null), document.getElementById('app'));
+document.cookie = 'lang=en;';
