@@ -1,82 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
 <url>
   <loc>https://websearch-via-camera.com</loc>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="id"
                href="https://websearch-via-camera.com/id"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="es"
                href="https://websearch-via-camera.com/es"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="el-us"
                href="https://websearch-via-camera.com/el"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="en"
                href="https://websearch-via-camera.com"/>
 </url>
 <url>
   <loc>https://websearch-via-camera.com/es</loc>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="id"
                href="https://websearch-via-camera.com/id"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="es"
                href="https://websearch-via-camera.com/es"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="el-us"
                href="https://websearch-via-camera.com/el"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="en"
                href="https://websearch-via-camera.com"/>
 </url>
 <url>
   <loc>https://websearch-via-camera.com/el</loc>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="id"
                href="https://websearch-via-camera.com/id"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="es"
                href="https://websearch-via-camera.com/es"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="el-us"
                href="https://websearch-via-camera.com/el"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="en"
                href="https://websearch-via-camera.com"/>
 </url>
 <url>
   <loc>https://websearch-via-camera.com/id</loc>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="id"
                href="https://websearch-via-camera.com/id"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="es"
                href="https://websearch-via-camera.com/es"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="el-us"
                href="https://websearch-via-camera.com/el"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="en"
                href="https://websearch-via-camera.com"/>
@@ -86,19 +83,19 @@
 </url>
 <url>
   <loc>https://websearch-via-camera.com/result/The%20Ten%20Commandments</loc>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="id"
                href="https://result.websearch-via-camera.com/id/Sepuluh%20Perintah%20Allah"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="es"
                href="https://result.websearch-via-camera.com/es/Los%20diez%20Mandamientos"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="el-us"
                href="https://result.websearch-via-camera.com/el/%CE%9F%CE%B9%20%CE%B4%CE%AD%CE%BA%CE%B1%20%CE%B5%CE%BD%CF%84%CE%BF%CE%BB%CE%AD%CF%82"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="en"
                href="https://websearch-via-camera.com/result/The%20Ten%20Commandments"/>      
@@ -120,38 +117,38 @@
 </url>
 <url>
   <loc>https://websearch-via-camera.com/result/GPT%20Vision</loc>
-            <link
+            <xhtml:link
                rel="alternate"
                hreflang="id"
                href="https://result.websearch-via-camera.com/id/GPT%20Vision"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="es"
                href="https://result.websearch-via-camera.com/es/GPT%20Vision"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="el-us"
                href="https://result.websearch-via-camera.com/el/GPT%20Vision"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="en"
                href="https://websearch-via-camera.com/result/GPT%20Vision"/>      
 </url>
 <url>
   <loc>https://result.websearch-via-camera.com/el/%CE%9F%CE%B9%20%CE%B4%CE%AD%CE%BA%CE%B1%20%CE%B5%CE%BD%CF%84%CE%BF%CE%BB%CE%AD%CF%82</loc>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="id"
                href="https://result.websearch-via-camera.com/id/Sepuluh%20Perintah%20Allah"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="es"
                href="https://result.websearch-via-camera.com/es/Los%20diez%20Mandamientos"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="el-us"
                href="https://result.websearch-via-camera.com/el/%CE%9F%CE%B9%20%CE%B4%CE%AD%CE%BA%CE%B1%20%CE%B5%CE%BD%CF%84%CE%BF%CE%BB%CE%AD%CF%82"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="en"
                href="https://websearch-via-camera.com/result/The%20Ten%20Commandments"/>      
@@ -164,19 +161,19 @@
 </url>
 <url>
   <loc>https://result.websearch-via-camera.com/es/Los%20diez%20Mandamientos</loc>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="id"
                href="https://result.websearch-via-camera.com/id/Sepuluh%20Perintah%20Allah"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="es"
                href="https://result.websearch-via-camera.com/es/Los%20diez%20Mandamientos"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="el-us"
                href="https://result.websearch-via-camera.com/el/%CE%9F%CE%B9%20%CE%B4%CE%AD%CE%BA%CE%B1%20%CE%B5%CE%BD%CF%84%CE%BF%CE%BB%CE%AD%CF%82"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="en"
                href="https://websearch-via-camera.com/result/The%20Ten%20Commandments"/>      
@@ -187,19 +184,19 @@
 </url>
 <url>
   <loc>https://result.websearch-via-camera.com/id/Sepuluh%20Perintah%20Allah</loc>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="id"
                href="https://result.websearch-via-camera.com/id/Sepuluh%20Perintah%20Allah"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="es"
                href="https://result.websearch-via-camera.com/es/Los%20diez%20Mandamientos"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="el-us"
                href="https://result.websearch-via-camera.com/el/%CE%9F%CE%B9%20%CE%B4%CE%AD%CE%BA%CE%B1%20%CE%B5%CE%BD%CF%84%CE%BF%CE%BB%CE%AD%CF%82"/>
-      <link
+      <xhtml:link
                rel="alternate"
                hreflang="en"
                href="https://websearch-via-camera.com/result/The%20Ten%20Commandments"/>      
