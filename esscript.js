@@ -19,7 +19,7 @@ const Dropdown = () => {
   if (parts.length === 2) {
     cLang = parts.pop().split(';').shift();
     if (cLang == 'en') {
-      window.location.href = '/en';
+      window.location.href = '';
       setSelectedItem(0);
     }
     if (cLang == 'id') {
