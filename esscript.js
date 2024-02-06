@@ -22,6 +22,9 @@ const Dropdown = () => {
       window.location.href = 'https://websearch-via-camera.com';
       setSelectedItem(0);
     }
+    if (cLang == 'es') {
+      setSelectedItem(1);
+    }
     if (cLang == 'id') {
       window.location.href = '/id';
       setSelectedItem(2);
