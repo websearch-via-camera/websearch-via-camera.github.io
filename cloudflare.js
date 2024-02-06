@@ -428,6 +428,9 @@ border-color: #1DA851;
 
           </head>
   <body>
+  <header style="display: flex; justify-content: center;">
+        <a href="https://websearch-via-camera.com"><img src="https://websearch-via-camera.com/logo.png" style="max-width:100%;" width="600" height="400"></a>
+  </header>
   <!-- partial:index.partial.html -->
   <div class="bg-white grid place-items-center min-h-screen w-full">
     <h1 class="text-xl m3 p-4 font-bold underline">
