@@ -6,16 +6,80 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://websearch-via-camera.com/</loc>
+  <loc>https://websearch-via-camera.com</loc>
+      <xhtml:link
+               rel="alternate"
+               hreflang="id"
+               href="https://websearch-via-camera.com/id"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="es"
+               href="https://websearch-via-camera.com/es"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="el-en"
+               href="https://websearch-via-camera.com/el"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://websearch-via-camera.com"/>
 </url>
 <url>
   <loc>https://websearch-via-camera.com/es</loc>
+      <xhtml:link
+               rel="alternate"
+               hreflang="id"
+               href="https://websearch-via-camera.com/id"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="es"
+               href="https://websearch-via-camera.com/es"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="el-en"
+               href="https://websearch-via-camera.com/el"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://websearch-via-camera.com"/>
 </url>
 <url>
   <loc>https://websearch-via-camera.com/el</loc>
+      <xhtml:link
+               rel="alternate"
+               hreflang="id"
+               href="https://websearch-via-camera.com/id"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="es"
+               href="https://websearch-via-camera.com/es"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="el-en"
+               href="https://websearch-via-camera.com/el"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://websearch-via-camera.com"/>
 </url>
 <url>
   <loc>https://websearch-via-camera.com/id</loc>
+      <xhtml:link
+               rel="alternate"
+               hreflang="id"
+               href="https://websearch-via-camera.com/id"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="es"
+               href="https://websearch-via-camera.com/es"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="el-en"
+               href="https://websearch-via-camera.com/el"/>
+      <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://websearch-via-camera.com"/>
 </url>
 <url>
   <loc>https://websearch-via-camera.com/result</loc>
