@@ -61,14 +61,20 @@ const Dropdown = () => {
 
   const handleItemClick = id => {
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
-    if (id == 0) {
-      window.location.href = 'https://websearch-via-camera.com';
-    }
-    if (id == 2) {
-      window.location.href = 'https://websearch-via-camera.com/id';
+    if (id == 0){
+    document.cookie = 'lang=en;';
+    window.location.href = 'https://websearch-via-camera.com';
     }
     if (id == 1) {
-      window.location.href = 'https://websearch-via-camera.com/es';
+      window.location.href = '/es';
+      document.cookie = 'lang=es;';
+    }
+    if (id == 2) {
+      window.location.href = '/id';
+      document.cookie = 'lang=id;';
+    }
+    if (id == 3) {
+      document.cookie = 'lang=el;';
     }
 
     toggleDropdown();
