@@ -17,6 +17,28 @@ const Dropdown = () => {
   const [isOpen, setOpen] = useState(false);
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
+  useEffect(()=>{    
+  let x = document.cookie;
+  const parts = x.split(`; lang=`);
+  if (parts.length === 2) {
+    cLang = parts.pop().split(';').shift();
+    if (cLang == 'en') {
+      window.location.href = 'https://websearch-via-camera.com';
+      setSelectedItem(0);
+    }
+    if (cLang == 'es') {
+      window.location.href = '/es';
+      setSelectedItem(1);
+    }
+    if (cLang == 'id') {
+      window.location.href = '/id';
+      setSelectedItem(2);
+    }
+    if (cLang == 'el') {
+      setSelectedItem(3);
+    }
+  }
+    }, [])
   const [newName, setnewName] = useState(results[0]);
   let ind = 0;
   const shuffle = useCallback(() => {
