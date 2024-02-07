@@ -110,7 +110,7 @@ const Dropdown = () => {
 
 
 
-    React.createElement("div", { style: {  paddingTop: '20px' } }, /*#__PURE__*/
+    React.createElement("div", { style: {  paddingLeft: '20px' } }, /*#__PURE__*/
     React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "Privacy Policy"))));
 
 
