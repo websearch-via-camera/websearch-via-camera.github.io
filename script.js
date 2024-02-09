@@ -111,8 +111,9 @@ const Dropdown = () => {
 
 
     React.createElement("div", { style: {  marginTop: '-25px' } }, /*#__PURE__*/
-    React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "Privacy Policy"))));
+    React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "Privacy Policy")), /*#__PURE__*/
 
+    React.createElement("img", { src: "https://logs-01.loggly.com/inputs/8d9d949e-8908-4525-9085-6039883fbb55/tag/homepage/1*1.gif" })));
 
 
 };
