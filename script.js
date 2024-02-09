@@ -14,12 +14,15 @@ const recents = [
   { href: 'https://result.websearch-via-camera.com/en/Flaky bread recipe', title: 'Flaky bread recipe'},
   { href: 'https://result.websearch-via-camera.com/en/Decorative owl sculpture', title: 'Decorative owl sculpture'},
   { href: 'https://result.websearch-via-camera.com/en/Persian rug designs', title: 'Persian rug designs'}
-]
+];
 
 const Dropdown = () => {
   const [isOpen, setOpen] = useState(false);
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [newName, setnewName] = useState({ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' });
+  const [newRecent, setnewRecent] = useState({ href: 'https://result.websearch-via-camera.com/en/Sea otter habitat', title: 'Sea otter habitat' });
+
   let x = document.cookie;
   const parts = x.split(`; lang=`);
   if (parts.length === 2) {
@@ -38,33 +41,36 @@ const Dropdown = () => {
     }
                            
   }
-
-  const [newName, setnewName] = useState({ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' });
-  const [newRecent, setnewRecent] = useState({ href: 'https://result.websearch-via-camera.com/en/Sea otter habitat', title: 'Sea otter habitat' });
-
-  let ind = 0;
   let ind2 = 0;
-  const shuffle = useCallback(() => {
+  const shuffle2 = useCallback(() => {
     if (ind2 + 1 >= recents.length) {
       ind2 = 0;
-      setnewRecent(recents[0]);
     } else {
-      setnewRecent(recents[ind2 + 1]);
       ind2 = ind2 + 1;
     }
+    setnewRecent(recents[ind2]);
+    }, []);
+
+  let ind = 0;
+  const shuffle = useCallback(() => {
     if (ind + 1 >= results.length) {
       ind = 0;
-      setnewName(results[0]);
     } else {
-      setnewName(results[ind + 1]);
       ind = ind + 1;
     }
+    setnewName(results[ind]);
   }, []);
 
   useEffect(() => {
     const intervalID = setInterval(shuffle, 3000);
     return () => clearInterval(intervalID);
   }, [shuffle]);
+    
+  useEffect(() => {
+    const intervalID = setInterval(shuffle2, 2000);
+    return () => clearInterval(intervalID);
+  }, [shuffle2]);
+    
   useEffect(() => {
     const url = "https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-2b706faa-8009-4af8-9ba2-0d52f5a1bed1/default/logger";
     fetch(url, {
