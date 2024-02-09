@@ -55,7 +55,15 @@ const Dropdown = () => {
     const intervalID = setInterval(shuffle, 3000);
     return () => clearInterval(intervalID);
   }, [shuffle]);
+  useEffect(() => {
+    const url = "https://logs-01.loggly.com/inputs/8d9d949e-8908-4525-9085-6039883fbb55/tag/IDhomepage";
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json" } });
 
+
+  }, []);
 
   const toggleDropdown = () => setOpen(!isOpen);
 
