@@ -52,7 +52,7 @@ const Dropdown = () => {
     return () => clearInterval(intervalID);
   }, [shuffle]);
   useEffect(() => {
-    const url = "https://logs-01.loggly.com/inputs/8d9d949e-8908-4525-9085-6039883fbb55/tag/IDhomepage";
+    const url = "https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-2b706faa-8009-4af8-9ba2-0d52f5a1bed1/default/logger";
     fetch(url, {
       method: "POST",
       headers: {
