@@ -11,7 +11,7 @@ const results = [
 const recents = [
     { href: 'https://result.websearch-via-camera.com/en/Sea otter habitat', title: 'Sea otter habitat'},
   { href: 'https://result.websearch-via-camera.com/en/Outdoor leisure activities with pets', title: 'Outdoor leisure activities with pets'},
-  { href: 'https://result.websearch-via-camera.com/en/Avocado, egg, cheese, and bread meal', title: 'Avocado, egg, cheese, and bread meal'},
+  { href: 'https://result.websearch-via-camera.com/en/Avocado, egg, and bread meal', title: 'Avocado, egg, and bread meal'},
   { href: 'https://result.websearch-via-camera.com/en/Flaky bread recipe', title: 'Flaky bread recipe'},
   { href: 'https://result.websearch-via-camera.com/en/Decorative owl sculpture', title: 'Decorative owl sculpture'},
   { href: 'https://result.websearch-via-camera.com/en/Persian rug designs', title: 'Persian rug designs'}
