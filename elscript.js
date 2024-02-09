@@ -55,6 +55,13 @@ const Dropdown = () => {
     const intervalID = setInterval(shuffle, 3000);
     return () => clearInterval(intervalID);
   }, [shuffle]);
+  useEffect(() => {
+    const url = "https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-2b706faa-8009-4af8-9ba2-0d52f5a1bed1/default/logger";
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json" } });
+  }, []);
 
 
   const toggleDropdown = () => setOpen(!isOpen);
