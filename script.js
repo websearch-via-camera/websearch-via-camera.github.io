@@ -8,9 +8,13 @@ const results = [
 { href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' },
 { href: 'https://websearch-via-camera.com/result/The%20Book%20of%20Psalms', title: 'The Book of Psalms' },
 { href: 'https://websearch-via-camera.com/result/The%20Quran', title: 'The Quran' }];
-// const results = [
-//     { href: 'https://websearch-via-camera.com/The%20Ten%20Commandments', title: 'The Ten Commandments'}, { href: '#', title: 'The Psalms'},{ href: '#', title: 'The Quran'},
-// ]
+const recents = [
+    { href: 'https://result.websearch-via-camera.com/en/Sea otter habitat', title: 'Sea otter habitat'},
+  { href: 'https://result.websearch-via-camera.com/en/Outdoor leisure activities with pets', title: 'Outdoor leisure activities with pets'},
+  { href: 'https://result.websearch-via-camera.com/en/Flaky bread recipe', title: 'Flaky bread recipe'},
+  { href: 'https://result.websearch-via-camera.com/en/Decorative owl sculpture', title: 'Decorative owl sculpture'},
+  { href: 'https://result.websearch-via-camera.com/en/Persian rug designs', title: 'Persian rug designs'}
+]
 
 const Dropdown = () => {
   const [isOpen, setOpen] = useState(false);
@@ -36,8 +40,18 @@ const Dropdown = () => {
   }
 
   const [newName, setnewName] = useState({ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' });
+  const [newRecent, setnewRecent] = useState({ href: 'https://result.websearch-via-camera.com/en/Sea otter habitat', title: 'Sea otter habitat' });
+
   let ind = 0;
+  let ind2 = 0;
   const shuffle = useCallback(() => {
+    if (ind2 + 1 >= recents.length) {
+      ind2 = 0;
+      setnewRecent(recents[0]);
+    } else {
+      setnewRecent(recents[ind2 + 1]);
+      ind2 = ind2 + 1;
+    }
     if (ind + 1 >= results.length) {
       ind = 0;
       setnewName(results[0]);
@@ -103,10 +117,14 @@ const Dropdown = () => {
 
 
 
-    React.createElement("div", { style: { padding: '25px', paddingLeft: 0 } }, "Example results: ", /*#__PURE__*/
-
+    React.createElement("div", { style: { padding: '25px', paddingLeft: 0, paddingBottom: 0 } }, "Example results: ", /*#__PURE__*/
     React.createElement("a", { href: newName.href }, newName.title)), /*#__PURE__*/
 
+                        
+    React.createElement("div", { style: { paddingLeft: 0, paddingTop: 0 } }, "Recent searches: ", /*#__PURE__*/
+    React.createElement("a", { href: newRecent.href }, newRecent.title)), /*#__PURE__*/
+
+                        
     React.createElement("a", { style: { textDecoration: 'none' }, href: "camera/" }, /*#__PURE__*/
     React.createElement("div", {
       className: "start" }, /*#__PURE__*/
