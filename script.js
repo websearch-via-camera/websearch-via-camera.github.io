@@ -62,12 +62,12 @@ const Dropdown = () => {
   }, []);
 
   useEffect(() => {
-    const intervalID = setInterval(shuffle, 3000);
+    const intervalID = setInterval(shuffle, 5000);
     return () => clearInterval(intervalID);
   }, [shuffle]);
     
   useEffect(() => {
-    const intervalID = setInterval(shuffle2, 2000);
+    const intervalID = setInterval(shuffle2, 2500);
     return () => clearInterval(intervalID);
   }, [shuffle2]);
     
