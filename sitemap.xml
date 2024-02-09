@@ -211,7 +211,7 @@
 <url>
   <loc>https://websearch-via-camera.com/result/Kaaba</loc>
 </url>
-      <url>
+<url>
   <loc>https://websearch-via-camera.com/result/Barack Obama</loc>
 </url>
 <url>
@@ -289,5 +289,20 @@
                rel="alternate"
                hreflang="en"
                href="https://websearch-via-camera.com/result/Joseph Smith"/>      
+</url>
+  <url>
+  <loc>https://result.websearch-via-camera.com/en/Sea otter habitat</loc>
+</url>
+  <url>
+  <loc>https://result.websearch-via-camera.com/en/Outdoor leisure activities with pets</loc>
+</url>
+  <url>
+  <loc>https://result.websearch-via-camera.com/en/Flaky bread recipe</loc>
+</url>
+  <url>
+  <loc>https://result.websearch-via-camera.com/en/Decorative owl sculpture</loc>
+</url>
+  <url>
+  <loc>https://result.websearch-via-camera.com/en/Persian rug designs</loc>
 </url>
 </urlset>
