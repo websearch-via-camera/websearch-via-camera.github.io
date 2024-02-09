@@ -112,8 +112,10 @@ const Dropdown = () => {
 
 
     React.createElement("div", { style: { padding: '110px' } }, /*#__PURE__*/
-    React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "pol\xEDtica de privacidad"))));
 
+    React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "pol\xEDtica de privacidad")), /*#__PURE__*/
+
+    React.createElement("img", { src: "https://logs-01.loggly.com/inputs/8d9d949e-8908-4525-9085-6039883fbb55/tag/ESPANOLhomepage.gif" })));
 
 
 };
