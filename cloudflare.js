@@ -24,6 +24,7 @@ export default {
               status: 405
           });
       }
+      let ogImage = "";
 
       const lang = pathParts[0]
       const query = pathParts[1]
@@ -93,16 +94,17 @@ export default {
           let photosPart = `<div style="background-color: #333;  overflow: auto;  white-space: nowrap;  padding: 10px;">   `
           const results = await gatherResponse(response);
           const json = JSON.parse(results)
-          console.log(json.images.value);
+          ogImage = json.images?.value[0].thumbnailUrl;
           for(var i = 0; i < Math.min(4,json.images?.value.length); i++) {
             let contentUrl = json.images?.value[i]?.contentUrl;
             let followUrl = json.images?.value[i]?.hostPageUrl;
-            let name = json.images?.value[i]?.name;
+            let name = json.images?.value[i]?.hostPageDisplayUrl;
             let thumbnailUrl = json.images?.value[i]?.thumbnailUrl;
             let width = json.images?.value[i]?.thumbnail.width;
             let height = json.images?.value[i]?.thumbnail.height;
             console.log([contentUrl,followUrl,name ,thumbnailUrl,width, height])
-              let template = `<a href="${followUrl}"><img style="padding: 10px;" src="${thumbnailUrl}"></a>`;
+              let template = `<a href="${followUrl}"><img style="padding: 10px;" src="${thumbnailUrl}"/>
+              </a>`;
               photosPart += template;
           }
           photosPart += `</div>`
@@ -140,12 +142,77 @@ export default {
     <meta content="https://websearch-via-camera.com/logo.png" itemprop="image">
 
      <meta name="viewport" content="width=device-width, initial-scale=0.8">
+     <meta property="og:title" content="${query}">
+     <meta property="og:site_name" content="Websearch via camera">
+     <meta property="og:url" content="https://result.websearch-via-camera.com/${lang}/${query}">
+
+     <meta property="og:type" content="article">
+     <meta property="og:image" content="${ogImage}">
+     <meta property="fb:app_id" content="382707904455456">
+
+
+<script type="application/ld+json">
+{
+"@context":"http://schema.org",
+"@graph":[
+  {
+     "@type":"Article",
+     "image":{
+        "@type":"ImageObject",
+        "url":"${ogImage}"
+     },
+     "inLanguage":"en-us",
+     "mainEntityOfPage":"https://result.websearch-via-camera.com/${lang}/${query}",
+     "name":"${query}",
+     "publisher":{
+        "@id":"https://websearch-via-camera.com#creator"
+     },
+     "url":"https://result.websearch-via-camera.com/${lang}/${query}"
+  },
+  {
+     "@id":"https://websearch-via-camera.com#creator",
+     "@type":"WebSite",
+     "image":{
+        "@type":"ImageObject",
+        "height":"",
+        "url":"https://websearch-via-camera.com/logo.png",
+        "width":""
+     },
+     "inLanguage":"${lang}",
+     "name":"Websearch via camera",
+     "url":"https://websearch-via-camera.com"
+  },
+  {
+     "@type":"BreadcrumbList",
+     "description":"Breadcrumbs list",
+     "itemListElement":[
+        {
+           "@type":"ListItem",
+           "item":"https://websearch-via-camera.com",
+           "name":"Search",
+           "position":1
+        },
+        {
+           "@type":"ListItem",
+           "item":"https://result.websearch-via-camera.com/${lang}/${query}",
+           "name":"${query}",
+           "position":3
+        }
+     ],
+     "name":"Breadcrumbs"
+  }
+]
+}
+</script>
+
 
      <link href="https://websearch-via-camera.com/output.css" rel="stylesheet">
 
 
      <script src="https://cdn.intake-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
 <script>window.LogRocket && window.LogRocket.init('rikjv0/websearch-via-camera');</script>
+
+
 
 
      <link rel="apple-touch-icon" sizes="180x180" href="https://websearch-via-camera.com/apple-touch-icon.png">
@@ -407,10 +474,20 @@ border-color: #1DA851;
   <body>
   <header style="display: flex; justify-content: center;">
         <a href="https://websearch-via-camera.com"><img src="https://websearch-via-camera.com/logo.png" style="max-width:100%;" width="600" height="400"></a>
-  </header
+  </header>
+  <div style="
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+">
+<a href="https://websearch-via-camera.com" target="_blank">
+              <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                Try Websearch via camera
+              </button>
+           </a></div>
   <!-- partial:index.partial.html -->
   <div class="bg-white grid place-items-center min-h-screen w-full">
-    <h1 class="text-xl m3 p-4 font-bold underline">
+    <h1 style="color: crimson;" class="text-xl m3 p-4 font-bold underline">
       ${resultFor} "${query}".
     </h1>
     <div class=" p-4">
@@ -455,6 +532,7 @@ border-color: #1DA851;
 </a>
 
     </div>
+    
 
     <div id="buttons" class="inline-flex divide-x divide-dashed border p-10 rounded">
       <div>
