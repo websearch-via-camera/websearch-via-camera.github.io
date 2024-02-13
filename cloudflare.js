@@ -90,9 +90,22 @@ export default {
           });
 
           let resultsPart = ``
-
+          let photosPart = `<div style="background-color: #333;  overflow: auto;  white-space: nowrap;  padding: 10px;">   `
           const results = await gatherResponse(response);
           const json = JSON.parse(results)
+          console.log(json.images.value);
+          for(var i = 0; i < Math.min(4,json.images?.value.length); i++) {
+            let contentUrl = json.images?.value[i]?.contentUrl;
+            let followUrl = json.images?.value[i]?.hostPageUrl;
+            let name = json.images?.value[i]?.name;
+            let thumbnailUrl = json.images?.value[i]?.thumbnailUrl;
+            let width = json.images?.value[i]?.thumbnail.width;
+            let height = json.images?.value[i]?.thumbnail.height;
+            console.log([contentUrl,followUrl,name ,thumbnailUrl,width, height])
+              let template = `<a href="${followUrl}"><img style="padding: 10px;" src="${thumbnailUrl}"></a>`;
+              photosPart += template;
+          }
+          photosPart += `</div>`
           for(var i = 0; i < json.webPages?.value.length; i++) {
               let name = json.webPages?.value[i]?.name;
               let followUrl = json.webPages?.value[i]?.url;
@@ -121,9 +134,11 @@ export default {
           }
 
           const topHtml = `<!DOCTYPE html>
-  <html lang="${lang}" >
+  <html lang="${lang}" itemscope="" itemtype="http://schema.org/WebPage" >
   <head>
     <meta charset="UTF-8">
+    <meta content="https://websearch-via-camera.com/logo.png" itemprop="image">
+
      <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
      <link href="https://websearch-via-camera.com/output.css" rel="stylesheet">
@@ -194,44 +209,6 @@ export default {
     
      </script>
 
-  <script type="application/ld+json">
-  [
-  {
-    "@context": "https://schema.org/", 
-    "@type": "BreadcrumbList", 
-    "itemListElement": [{
-      "@type": "ListItem", 
-      "position": 1, 
-      "name": "Search",
-      "item": "https://websearch-via-camera.com"  
-    },{
-      "@type": "ListItem", 
-      "position": 2, 
-      "name": "Result",
-      "item": "https://result.websearch-via-camera.com"  
-    },{
-      "@type": "ListItem", 
-      "position": 3, 
-      "name": "${query}",
-      "item": ""  
-    }]
-  }
-  ,{
-    "@context": "https://schema.org/", 
-    "@type": "BreadcrumbList", 
-    "itemListElement": [{
-      "@type": "ListItem", 
-      "position": 1, 
-      "name": "Search",
-      "item": "https://websearch-via-camera.com"  
-    },{
-      "@type": "ListItem", 
-      "position": 2, 
-      "name": "${query}",
-      "item": ""  
-    }]
-  }]
-  </script>
   <style>
   .resp-sharing-button__link,
 .resp-sharing-button__icon {
@@ -430,7 +407,7 @@ border-color: #1DA851;
   <body>
   <header style="display: flex; justify-content: center;">
         <a href="https://websearch-via-camera.com"><img src="https://websearch-via-camera.com/logo.png" style="max-width:100%;" width="600" height="400"></a>
-  </header>
+  </header
   <!-- partial:index.partial.html -->
   <div class="bg-white grid place-items-center min-h-screen w-full">
     <h1 class="text-xl m3 p-4 font-bold underline">
@@ -518,7 +495,7 @@ border-color: #1DA851;
       </div>
     </div>
 
-
+    ${photosPart}
     ${resultsPart}
   
     <h6 class="text-sm p-4">${powered}</h6>
