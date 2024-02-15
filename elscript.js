@@ -111,7 +111,7 @@ const Dropdown = () => {
 
     React.createElement("a", { href: newName.href }, newName.title)), /*#__PURE__*/
 
-    React.createElement("a", { style: { textDecoration: 'none' }, href: "/camera/es" }, /*#__PURE__*/
+    React.createElement("a", { style: { textDecoration: 'none' }, href: "/camera/el" }, /*#__PURE__*/
     React.createElement("div", {
       className: "start" }, /*#__PURE__*/
 
