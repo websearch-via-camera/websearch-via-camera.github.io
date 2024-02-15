@@ -94,7 +94,7 @@ export default {
           let photosPart = `<div style="background-color: #333;  overflow: auto;  white-space: nowrap;  padding: 10px;">   `
           const results = await gatherResponse(response);
           const json = JSON.parse(results)
-          ogImage = json.images?.value[0].thumbnailUrl;
+          ogImage = json.images?.value[0]?.thumbnailUrl;
           for(var i = 0; i < Math.min(4,json.images?.value.length); i++) {
             let contentUrl = json.images?.value[i]?.contentUrl;
             let followUrl = json.images?.value[i]?.hostPageUrl;
@@ -103,11 +103,13 @@ export default {
             let width = json.images?.value[i]?.thumbnail.width;
             let height = json.images?.value[i]?.thumbnail.height;
             console.log([contentUrl,followUrl,name ,thumbnailUrl,width, height])
-              let template = `<a href="${followUrl}"><img style="padding: 10px;" src="${thumbnailUrl}"/>
+              let template = `<a href="${followUrl}"><img style="padding: 10px;" width=${width} height=${height} src="${thumbnailUrl}"/>
               </a>`;
               photosPart += template;
           }
           photosPart += `</div>`
+          if (!ogImage) photosPart=``
+
           for(var i = 0; i < json.webPages?.value.length; i++) {
               let name = json.webPages?.value[i]?.name;
               let followUrl = json.webPages?.value[i]?.url;
