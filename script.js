@@ -14,7 +14,7 @@ const recents = [
     { href: 'https://result.websearch-via-camera.com/en/Sandwich recipe', title: 'Sandwich recipe'},
     { href: 'https://result.websearch-via-camera.com/en/Freshwater fish', title: 'Freshwater fish'},
     { href: 'https://result.websearch-via-camera.com/en/Sea otter habitat', title: 'Sea otter habitat'},
-    { href: 'https://result.websearch-via-camera.com/en/Scripture from Hebrews 13', title: 'Scripture from Hebrews 13'},
+    { href: 'https://result.websearch-via-camera.com/en/what are the theories of religion', title: 'what are the theories of religion'},
   { href: 'https://result.websearch-via-camera.com/en/Valentine', title: 'Valentine'},
   { href: 'https://result.websearch-via-camera.com/en/Outdoor leisure activities with pets', title: 'Outdoor leisure activities with pets'},
   { href: 'https://result.websearch-via-camera.com/en/Avocado, egg, and bread meal', title: 'Avocado, egg, and bread meal'},
@@ -28,7 +28,7 @@ const Dropdown = () => {
   const [items, setItem] = useState(data);
   const [selectedItem, setSelectedItem] = useState(null);
   const [newName, setnewName] = useState({ href: 'https://websearch-via-camera.com/result/The%20Ten%20Commandments', title: 'The Ten Commandments' });
-  const [newRecent, setnewRecent] = useState({ href: 'https://result.websearch-via-camera.com/en/Sandwich recipe', title: 'Sandwich recipe'});
+  const [newRecent, setnewRecent] = useState(recents[0]);
 
   let x = document.cookie;
   const parts = x.split(`; lang=`);
