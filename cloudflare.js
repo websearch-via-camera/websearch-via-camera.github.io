@@ -217,8 +217,8 @@ export default {
      <link href="https://websearch-via-camera.com/output.css" rel="stylesheet">
 
 
-//      <script src="https://cdn.intake-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
-// <script>window.LogRocket && window.LogRocket.init('rikjv0/websearch-via-camera');</script>
+      <script src="https://cdn.intake-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
+ <script>window.LogRocket && window.LogRocket.init('rikjv0/websearch-via-camera');</script>
 
 
 
@@ -455,6 +455,7 @@ export default {
   
   
 </style>
+<div class="bg-white grid place-items-center min-h-screen w-full">
 
           </head>
   <body>
@@ -473,7 +474,6 @@ export default {
               </button>
            </a></div>
   <!-- partial:index.partial.html -->
-  <div class="bg-white grid place-items-center min-h-screen w-full">
   <a href="https://result.websearch-via-camera.com/${lang}/${query}">
     <h1 style="color: crimson;" class="text-xl m3 p-4 font-bold underline">
       ${resultFor} "${query}".
@@ -502,6 +502,7 @@ export default {
 
     </div>
     
+    ${photosPart}
 
     <div id="buttons" class="inline-flex divide-x divide-dashed border p-10 rounded">
       <div>
@@ -542,7 +543,6 @@ export default {
       </div>
     </div>
 
-    ${photosPart}
     ${resultsPart}
   
     <h6 class="text-sm p-4">${powered}</h6>
