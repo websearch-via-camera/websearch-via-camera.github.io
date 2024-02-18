@@ -1,124 +1,58 @@
 <!DOCTYPE html>
-<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="https://websearch-via-camera.com/logo.png" itemprop="image">
+<html itemscope="" itemtype="http://schema.org/WebPage"  lang="en" >
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta content="https://websearch-via-camera.com/logo.png" itemprop="image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Websearch via camera",
+  "url": "https://websearch-via-camera.com",
+  "logo": "https://websearch-via-camera.com/logo.png",
+  "sameAs": "https://www.facebook.com/websearchviacamera"
+}
+</script>
     <meta property="og:title" content="WebSearch Via Camera" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://websearch-via-camera.com" />
     <meta property="og:image" content="https://websearch-via-camera.com/logo.png" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <!-- 
-      This viewport works for phones with notches.
-      It's optimized for gestures by disabling global zoom.
-     -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.00001, viewport-fit=cover"
-    />
-    <script src="https://cdn.intake-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
-    <script>window.LogRocket && window.LogRocket.init('rikjv0/websearch-via-camera');</script>
-    <title>Websearch via camera</title>
-    <style>
-      /**
-       * Extend the react-native-web reset:
-       * https://github.com/necolas/react-native-web/blob/master/packages/react-native-web/src/exports/StyleSheet/initialRules.js
-       */
-      html,
-      body,
-      #root {
-        width: 100%;
-        /* To smooth any scrolling behavior */
-        -webkit-overflow-scrolling: touch;
-        margin: 0px;
-        padding: 0px;
-        /* Allows content to fill the viewport and go beyond the bottom */
-        min-height: 100%;
-      }
-      #root {
-        flex-shrink: 0;
-        flex-basis: auto;
-        flex-grow: 1;
-        display: flex;
-        flex: 1;
-      }
+    <meta property="og:description" content="Find what you’re looking for with just an image. Simply take a picture or upload one, and get instant and accurate search results. It's searching, reinvented." />
+    <meta property="og:site_name" content="WebSearch Via Camera" />
+    <meta property="og:locale" content="en_US" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="canonical" href="https://websearch-via-camera.com">
+    <link rel="alternate" hreflang="en"
+       href="https://websearch-via-camera.com" />
+  <link rel="alternate" hreflang="id"
+       href="https://websearch-via-camera.com/id" />
+  <link rel="alternate" hreflang="es"
+       href="https://websearch-via-camera.com/es" />
+  <link rel="alternate" hreflang="el-us"
+       href="https://websearch-via-camera.com/el" />
 
-      html {
-        scroll-behavior: smooth;
-        /* Prevent text size change on orientation change https://gist.github.com/tfausak/2222823#file-ios-8-web-app-html-L138 */
-        -webkit-text-size-adjust: 100%;
-        height: calc(100% + env(safe-area-inset-top));
-      }
+  <meta name="description" content="Find what you’re looking for with just an image.">
+  <title>Websearch via camera</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <script src="https://cdn.intake-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
+<script>window.LogRocket && window.LogRocket.init('rikjv0/websearch-via-camera');</script>
 
-      body {
-        display: flex;
-        /* Allows you to scroll below the viewport; default value is visible */
-        overflow-y: auto;
-        overscroll-behavior-y: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        -ms-overflow-style: scrollbar;
-      }
-      /* Enable for apps that support dark-theme */
-      /*@media (prefers-color-scheme: dark) {
-        body {
-          background-color: black;
-        }
-      }*/
-    </style>
-  <link rel="shortcut icon" href="/favicon.ico" /></head>
-
-  <body>
-    <!-- 
-      A generic no script element with a reload button and a message.
-      Feel free to customize this however you'd like.
-    -->
-    <noscript>
-      <form
-        action=""
-        style="
-          background-color: #fff;
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 9999;
-        "
-      >
-        <div
-          style="
-            font-size: 18px;
-            font-family: Helvetica, sans-serif;
-            line-height: 24px;
-            margin: 10%;
-            width: 80%;
-          "
-        >
-          <p>Oh no! It looks like JavaScript is not enabled in your browser.</p>
-          <p style="margin: 20px 0;">
-            <button
-              type="submit"
-              style="
-                background-color: #4630eb;
-                border-radius: 100px;
-                border: none;
-                box-shadow: none;
-                color: #fff;
-                cursor: pointer;
-                font-weight: bold;
-                line-height: 20px;
-                padding: 6px 16px;
-              "
-            >
-              Reload
-            </button>
-          </p>
-        </div>
-      </form>
-    </noscript>
-    <!-- The root element for your Expo app. -->
-    <div id="root"></div>
-  <script src="/bundles/web-84ed61563bfae7b8e3f6a1983b5f4b50.js" defer></script></body>
+  
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app"></div>
+<!-- partial -->
+  <script src='https://unpkg.com/react@16.14.0/umd/react.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.9.0/umd/react.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.9.0/umd/react-dom.production.min.js'></script>
+   <script src="./script.js"></script>
+</body>
 </html>
