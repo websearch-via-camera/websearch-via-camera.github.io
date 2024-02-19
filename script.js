@@ -142,7 +142,7 @@ const Dropdown = () => {
     React.createElement("h4", null, "Powered by GPT Vision"), /*#__PURE__*/
     React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "Privacy Policy"),
                        
-    React.createElement("a", { style: { paddingLeft: 100} }, {href: "https://websearch-via-camera.com/result.html" }, "Sitemap")));
+    React.createElement("a", {href: "https://websearch-via-camera.com/result.html" }, "Sitemap")));
 
 
 };
