@@ -114,7 +114,6 @@ const Dropdown = () => {
     React.createElement("div", null, /*#__PURE__*/
     React.createElement("h1", null, "Search the Web ", /*#__PURE__*/React.createElement("br", null), "via your camera"), /*#__PURE__*/
 
-    React.createElement("h4", null, "Powered by GPT Vision"), /*#__PURE__*/
     React.createElement("div", { className: "dropdown" }, /*#__PURE__*/
     React.createElement("div", { className: "dropdown-header", onClick: toggleDropdown },
     selectedItem ? items.find(item => item.id == selectedItem).label : "Select your language", /*#__PURE__*/
@@ -125,13 +124,6 @@ const Dropdown = () => {
     React.createElement("div", { className: "dropdown-item", onClick: handleItemClick, id: item.id }, /*#__PURE__*/
     React.createElement("span", { className: `dropdown-item-dot ${item.id == selectedItem && 'selected'}` }, "\u2022 "),
     item.label)))), /*#__PURE__*/
-
-
-
-
-
-    React.createElement("div", { style: { padding: '25px', paddingLeft: 0, paddingBottom: 0 } }, "Example results: ", /*#__PURE__*/
-    React.createElement("a", { href: newName.href }, newName.title)), /*#__PURE__*/
 
                         
     React.createElement("div", { style: { paddingLeft: 0, paddingTop: 0 } }, "Recent searches: ", /*#__PURE__*/
@@ -148,7 +140,9 @@ const Dropdown = () => {
 
 
     React.createElement("div", { style: {  marginTop: '-25px' } }, /*#__PURE__*/
-    React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "Privacy Policy"))));
+    React.createElement("a", { href: "https://websearch-via-camera.com/privacy%20policy.html" }, "Privacy Policy")
+    React.createElement("h4", null, "Powered by GPT Vision"), /*#__PURE__*/
+                       )));
 
 
 };
