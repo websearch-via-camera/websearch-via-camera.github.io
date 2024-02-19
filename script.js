@@ -112,7 +112,8 @@ const Dropdown = () => {
 
   return /*#__PURE__*/(
     React.createElement("div", null, /*#__PURE__*/
-    React.createElement("img", { src: "https://websearch-via-camera.com/logo.png", width: "600", height: "400", alt: "Websearch via camera logo" }), /*#__PURE__*/
+    React.createElement("div", { style: { display: "flex", justifyContent: "center" } }, /*#__PURE__*/
+    React.createElement("img", { style: { maxWidth: "100%" }, src: "https://websearch-via-camera.com/logo.png", width: "600", height: "400", alt: "Websearch via camera logo" })), /*#__PURE__*/
 
     React.createElement("h1", null, "Find what you’re", /*#__PURE__*/React.createElement("br", null) ,"looking for ", /*#__PURE__*/React.createElement("br", null), "with just an image."), /*#__PURE__*/
 
