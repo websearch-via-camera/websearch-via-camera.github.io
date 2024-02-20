@@ -28,9 +28,7 @@ export default {
 
       const lang = pathParts[0]
       const query = pathParts[1]
-      console.log(path)
-      console.log(lang)
-      console.log(query)
+  
       let tryText = "Try Websearch via camera"
       let resultFor = "Results for"
       let slow = "Slow, please wait."
@@ -97,7 +95,8 @@ export default {
           let resultsPart = ``
           let photosPart = `<div style="background-color: #333;  overflow: auto;  white-space: nowrap;  padding: 10px;">   `
           const results = await gatherResponse(response);
-          const json = JSON.parse(results)
+          const json = JSON.parse(results);
+          //console.log(json.images?.value[0]);
           ogImage = json.images?.value[0]?.thumbnailUrl;
           for(var i = 0; i < Math.min(4,json.images?.value.length); i++) {
             let contentUrl = json.images?.value[i]?.contentUrl;
@@ -106,8 +105,8 @@ export default {
             let thumbnailUrl = json.images?.value[i]?.thumbnailUrl;
             let width = json.images?.value[i]?.thumbnail.width;
             let height = json.images?.value[i]?.thumbnail.height;
-            console.log([contentUrl,followUrl,name ,thumbnailUrl,width, height])
-              let template = `<a href="${followUrl}"><img  alt="${query}" style="padding: 10px;" width=${width} height=${height} src="${thumbnailUrl}"/>
+            //console.log([contentUrl,followUrl,name ,thumbnailUrl,width, height])
+              let template = `<a href="${contentUrl}"><img  alt="${query}" style="padding: 10px;" width=${width} height=${height} src="${thumbnailUrl}"/>
               </a>`;
               photosPart += template;
           }
@@ -217,10 +216,7 @@ export default {
      <link href="https://websearch-via-camera.com/output.css" rel="stylesheet">
 
 
-      <script src="https://cdn.intake-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
- <script>window.LogRocket && window.LogRocket.init('rikjv0/websearch-via-camera');</script>
-
-
+ <meta name="robots" content="noindex">
 
 
      <link rel="apple-touch-icon" sizes="180x180" href="https://websearch-via-camera.com/apple-touch-icon.png">
