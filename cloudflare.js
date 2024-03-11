@@ -16,6 +16,16 @@ export default {
       let url = new URL(request.url);
       let path = url.pathname;
       path = decodeURI(path)
+      if (path == "/robots.txt") {
+        return new Response(`User-Agent: *
+        Disallow: *`, {
+          headers: {
+              "content-type": "text/html;charset=UTF-8",
+          },
+      });
+        
+
+      }
       path = path.replace(/^\//, "")
       const pathParts = path.split("/")
 
@@ -67,8 +77,7 @@ export default {
           powered = "Didukung oleh GPT."
           apiurlsummary = 'https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-2b706faa-8009-4af8-9ba2-0d52f5a1bed1/default/doIdSummary'
       }
-      console.log(apiurl)
-      console.log(apiurlsummary)
+ 
       if(['es', 'el', 'en', 'id'].indexOf(lang) > -1 && request.method === 'GET') {
           async function gatherResponse(response) {
               const {
@@ -91,6 +100,7 @@ export default {
                   "Content-Type": "application/json"
               }
           });
+
 
           let resultsPart = ``
           let photosPart = `<div style="background-color: #333;  overflow: auto;  white-space: nowrap;  padding: 10px;">   `
@@ -210,6 +220,17 @@ export default {
   }
 ]
 }
+</script>
+<script>
+const url = "https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-2b706faa-8009-4af8-9ba2-0d52f5a1bed1/default/logger";
+fetch(url, {
+  "method": "POST",
+  "body": JSON.stringify({
+      "query": "${query}",
+      "lang": "${lang}"
+  }),
+  headers: {
+"Content-Type": "application/json" } });
 </script>
 
 
@@ -455,20 +476,7 @@ export default {
 
           </head>
   <body>
-  <header style="display: flex; justify-content: center;">
-        <a href="https://websearch-via-camera.com">
-        <img src="https://websearch-via-camera.com/logo.png" style="max-width:100%;" width="600" height="400" alt="Websearch via camera logo"></a>
-  </header>
-  <div style="
-    justify-content: center;
-    display: flex;
-    justify-content: center;
-">
-<a href="https://websearch-via-camera.com/${lang}" target="_blank">
-              <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                ${tryText}
-              </button>
-           </a></div>
+
   <!-- partial:index.partial.html -->
   <a href="https://result.websearch-via-camera.com/${lang}/${query}">
     <h1 style="color: crimson;" class="text-xl m3 p-4 font-bold underline">
