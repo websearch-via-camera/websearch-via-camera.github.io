@@ -275,18 +275,6 @@ fetch(url, {
       return text;
     }
     
-    function showGPT(query) {
-      document.getElementById("notif").style.display = "block";
-      document.getElementById("gpt").style.display = "block";
-
-      const url =
-        "https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-2b706faa-8009-4af8-9ba2-0d52f5a1bed1/default/doGPT";
-      let container = document.getElementById("gptText");
-      obj = getText(url, query).then((data) =>
-        console.log((container.innerHTML = data))
-      );
-
-    }
 
     function showSummary() {
       document.getElementById("notif").style.display = "block";
@@ -510,17 +498,10 @@ fetch(url, {
 
     <div id="buttons" class="inline-flex divide-x divide-dashed border p-10 rounded">
       <div>
-        <button id="knowledgeBtn" onclick="showGPT(' ${query.replace(/'/g, "")} ')" style="background-color: #1d4ed8;color: white;" class="hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mx-10">
-        ${GPTKnowledge}
-        </button>
-      </div>
-      <div>
         <button onclick="showSummary()"  class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mx-10">
           ${SummarizeBtn}
         </button>
       </div>
-      
-      
     </div>
 
 
